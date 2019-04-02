@@ -123,7 +123,7 @@ def doubler(list1, list2):
         :type list2: list of int
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # -------------------------------------------------------------------------
     # -------------------------------------------------------------------------
@@ -133,9 +133,10 @@ def doubler(list1, list2):
     # -------------------------------------------------------------------------
     boy = []
     for k in range(len(list1)):
-        list[k] = list[k] * 2
-    for j in range
-
+        list1[k] = list1[k] * 2
+    for j in range(len(list2)):
+        boy = boy + [list2[j] * 2]
+    return boy
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
