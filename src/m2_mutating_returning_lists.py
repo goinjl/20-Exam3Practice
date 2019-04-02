@@ -6,8 +6,8 @@ This problem provides practice at:
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Jacey.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 # Students:
@@ -38,7 +38,7 @@ def main():
 def run_test_doubler():
     """ Tests the    doubler    function. """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function.
+    # DONE: 2. Implement this TEST function.
     #   It TESTS the  doubler  function defined below.
     #   Include at least ** 1 ** ADDITIONAL test beyond those we wrote.
     #
@@ -83,7 +83,27 @@ def run_test_doubler():
     # -------------------------------------------------------------------------
     # TO DO 2 (continued): Add your ADDITIONAL test(s) here:
     # -------------------------------------------------------------------------
+    # Test 2:
+    arg1 = [-2, -3, 21, 4]
+    arg2 = [-100, 3, 0]
+    correct_arg1_after = [-4, -6, 42, 8]
+    correct_arg2_after = [-100, 3, 0]
+    expected = [-200, 6, 0]
 
+    print()
+    print('BEFORE the function call:')
+    print('  Argument 1 is:', arg1)
+    print('  Argument 2 is:', arg2)
+
+    answer = doubler(arg1, arg2)
+
+    print('AFTER the function call:')
+    print('  Argument 1 is:       ', arg1)
+    print('  Argument 1 should be:', correct_arg1_after)
+    print('  Argument 2 is:       ', arg2)
+    print('  Argument 2 should be:', correct_arg2_after)
+    print('The returned value is:       ', answer)
+    print('The returned value should be:', expected)
 
 def doubler(list1, list2):
     """
@@ -111,7 +131,10 @@ def doubler(list1, list2):
     #    DIFFICULTY:      4
     #    TIME ESTIMATE:   5 minutes.
     # -------------------------------------------------------------------------
-
+    boy = []
+    for k in range(len(list1)):
+        list[k] = list[k] * 2
+    for j in range
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
